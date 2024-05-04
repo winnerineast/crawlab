@@ -13,3 +13,12 @@
 [submodule "backend/log"]
 	path = backend/log
 	url = https://github.com/crawlab-team/crawlab-log
+[submodule "deployment_examples"]
+	path = deployment_examples
+	url = https://github.com/winnerineast/examples.git
+[submodule "crawlab-docs"]
+	path = crawlab-docs
+	url = https://github.com/winnerineast/crawlab-docs.git
+[submodule "screenshots"]
+	path = screenshots
+	url = https://github.com/winnerineast/images.git
