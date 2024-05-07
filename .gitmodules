@@ -22,3 +22,24 @@
 [submodule "screenshots"]
 	path = screenshots
 	url = https://github.com/winnerineast/images.git
+[submodule "crawlab-core"]
+	path = crawlab-core
+	url = https://github.com/winnerineast/crawlab-core.git
+[submodule "crawlab-fs"]
+	path = crawlab-fs
+	url = https://github.com/winnerineast/crawlab-fs.git
+[submodule "crawlab-vcs"]
+	path = crawlab-vcs
+	url = https://github.com/winnerineast/crawlab-vcs.git
+[submodule "crawlab-grpc"]
+	path = crawlab-grpc
+	url = https://github.com/winnerineast/crawlab-grpc.git
+[submodule "goseaweedfs"]
+	path = goseaweedfs
+	url = https://github.com/winnerineast/goseaweedfs.git
+[submodule "template-parser"]
+	path = template-parser
+	url = https://github.com/winnerineast/template-parser.git
+[submodule "go-trace"]
+	path = go-trace
+	url = https://github.com/winnerineast/go-trace.git

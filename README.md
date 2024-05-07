@@ -83,50 +83,49 @@ docker-compose up -d
 
 For Docker Deployment details, please refer to [relevant documentation](crawlab-docs/docs/en/guide/installation/docker.md).
 
-
 ## Screenshot
 
 #### Login
 
-![](screenshots/20210729/screenshot-login.png?raw=true)
+![](screenshots/20210729/screenshot-login.png)
 
 #### Home Page
 
-![](screenshots/20210729/screenshot-home.png?raw=true)
+![](screenshots/20210729/screenshot-home.png)
 
 #### Node List
 
-![](screenshots/20210729/screenshot-node-list.png?raw=true)
+![](screenshots/20210729/screenshot-node-list.png)
 
 #### Spider List
 
-![](screenshots/20210729/screenshot-spider-list.png?raw=true)
+![](screenshots/20210729/screenshot-spider-list.png)
 
 #### Spider Overview
 
-![](screenshots/20210729/screenshot-spider-detail-overview.png?raw=true)
+![](screenshots/20210729/screenshot-spider-detail-overview.png)
 
 #### Spider Files
 
-![](screenshots/20210729/screenshot-spider-detail-files.png?raw=true)
+![](screenshots/20210729/screenshot-spider-detail-files.png)
 
 #### Task Log
 
-![](screenshots/20210729/screenshot-task-detail-logs.png?raw=true)
+![](screenshots/20210729/screenshot-task-detail-logs.png)
 
 #### Task Results
 
-![](screenshots/20210729/screenshot-task-detail-data.png?raw=true)
+![](screenshots/20210729/screenshot-task-detail-data.png)
 
 #### Cron Job
 
-![](screenshots/20210729/screenshot-schedule-detail-overview.png?raw=true)
+![](screenshots/20210729/screenshot-schedule-detail-overview.png)
 
 ## Architecture
 
 The architecture of Crawlab is consisted of a master node, worker nodes, [SeaweedFS](https://github.com/chrislusf/seaweedfs) (a distributed file system) and MongoDB database. 
 
-![](screenshots/20210729/crawlab-architecture-v0.6.png?raw=true)
+![](screenshots/20210729/crawlab-architecture-v0.6.png)
 
 The frontend app interacts with the master node, which communicates with other components such as MongoDB, SeaweedFS and worker nodes. Master node and worker nodes communicate with each other via [gRPC](https://grpc.io) (a RPC framework). Tasks are scheduled by the task scheduler module in the master node, and received by the task handler module in worker nodes, which executes these tasks in task runners. Task runners are actually processes running spider or crawler programs, and can also send data through gRPC (integrated in SDK) to other data sources, e.g. MongoDB.
 
