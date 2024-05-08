@@ -43,3 +43,6 @@
 [submodule "go-trace"]
 	path = go-trace
 	url = https://github.com/winnerineast/go-trace.git
+[submodule "public-plugins"]
+	path = public-plugins
+	url = https://github.com/winnerineast/public-plugins.git
