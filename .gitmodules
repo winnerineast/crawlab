@@ -46,3 +46,6 @@
 [submodule "public-plugins"]
 	path = public-plugins
 	url = https://github.com/winnerineast/public-plugins.git
+[submodule "crawlab-db"]
+	path = crawlab-db
+	url = https://github.com/winnerineast/crawlab-db.git
